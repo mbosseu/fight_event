@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /comments/
+Disallow: /feed/
+Disallow: /suivi-seo/
+
+Sitemap: https://fight-event.fr/sitemap.xml

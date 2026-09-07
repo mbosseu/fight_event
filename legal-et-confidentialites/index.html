@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Légal et Confidentialités - Événements, Galas Boxe Toulouse</title>
+<meta name="description" content="Mentions légales et politique de confidentialité du site Fight Event. Organisation d'événements de boxe à Toulouse.">
+<link rel="canonical" href="/legal-et-confidentialites/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Légal et Confidentialités - Fight Event">
+<meta property="og:url" content="/legal-et-confidentialites/">
+<meta property="og:site_name" content="Fight Event">
+<link rel="icon" href="/fight-event-assets/favicon.webp" sizes="32x32">
+<link rel="apple-touch-icon" href="/fight-event-assets/favicon.webp">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" crossorigin="anonymous" rel="preconnect">
+<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,600,700|Lexend:400,700&display=swap" rel="stylesheet">
+<style>
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 100%; scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #fefefe;
+  background-color: #1c1b1b;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img, video { max-width: 100%; height: auto; display: block; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #bc0000;
+  line-height: 1.2;
+}
+h1 { font-size: 3.5rem; line-height: 1.1; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.3rem; }
+p { margin-bottom: 0; }
+ul { list-style: none; }
+
+:root {
+  --color-0: #fefefe;
+  --color-1: #feffff;
+  --color-2: #1c1b1b;
+  --color-3: #222222;
+  --color-4: #d9d9d9;
+  --color-5: #fb0000;
+  --color-6: #bc0000;
+  --color-7: #1f0a0c;
+  --color-8: #222222;
+  --max-width: 1280px;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+  background-color: var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 0 40px;
+}
+.site-logo img { width: 200px; height: auto; }
+.header-nav { display: flex; align-items: center; gap: 0; }
+.header-nav ul { display: flex; align-items: center; gap: 0; }
+.header-nav .menu-link {
+  display: block;
+  padding: 0 16px;
+  font-weight: 500;
+  color: var(--color-0);
+  line-height: 80px;
+  position: relative;
+  transition: color 0.2s;
+}
+.header-nav .menu-link:hover { color: var(--color-5); }
+.header-nav .menu-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s, left 0.3s;
+}
+.header-nav .menu-link:hover::before {
+  width: calc(100% - 1.2em);
+  left: 0.6em;
+}
+.has-submenu { position: relative; }
+.has-submenu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-2);
+  border-top: 2px solid var(--color-6);
+  min-width: 220px;
+  z-index: 100;
+}
+.has-submenu:hover .sub-menu { display: block; }
+.sub-menu .menu-link {
+  line-height: 1.5;
+  padding: 10px 20px;
+  display: block;
+  font-size: 14px;
+}
+.sub-menu .menu-link:hover { color: var(--color-5); }
+.dropdown-arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.dropdown-arrow svg { width: 10px; height: 6px; fill: currentColor; }
+.header-cta .btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid var(--color-5);
+  border-radius: 5px;
+  color: var(--color-0);
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-size: 16px;
+}
+.header-cta .btn:hover {
+  background: var(--color-6);
+  border-color: var(--color-6);
+  color: var(--color-0);
+}
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--color-0);
+  border-radius: 3px;
+  padding: 6px 8px;
+  color: var(--color-0);
+  cursor: pointer;
+}
+.mobile-toggle svg { width: 24px; height: 24px; fill: currentColor; }
+.mobile-menu {
+  display: none;
+  background: var(--color-3);
+}
+.mobile-menu.active { display: block; }
+.mobile-menu a {
+  display: block;
+  padding: 12px 32px;
+  color: var(--color-0);
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.mobile-menu a:hover { color: var(--color-3); background: var(--color-4); }
+
+/* ========== LEGAL CONTENT ========== */
+.hero-legal {
+  background: var(--color-7);
+  padding: 100px 40px 60px;
+}
+.hero-legal .section-inner { max-width: var(--max-width); margin: 0 auto; }
+.hero-legal h1 { margin-bottom: 24px; }
+.hero-legal .hero-desc {
+  color: rgba(254, 254, 254, 0.7);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+.legal-section {
+  background: var(--color-2);
+  padding: 80px 40px;
+}
+.legal-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.legal-inner h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.legal-inner h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+.legal-inner p {
+  color: rgba(254,254,254,0.75);
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.legal-inner a {
+  color: var(--color-5);
+  text-decoration: underline;
+}
+.legal-inner a:hover { color: var(--color-0); }
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background: var(--color-2);
+  padding: 72px 40px;
+}
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.footer-brand img { width: 73px; height: auto; margin-bottom: 16px; }
+.footer-brand p { color: rgba(254,254,254,0.5); font-size: 14px; }
+.footer-nav { text-align: right; }
+.footer-nav ul { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.footer-nav a {
+  color: var(--color-0);
+  font-size: 15px;
+  transition: color 0.2s;
+}
+.footer-nav a:hover { color: var(--color-5); }
+
+/* ========== SCROLL TO TOP ========== */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: var(--color-0);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.scroll-top.visible { opacity: 1; }
+.scroll-top svg { width: 16px; height: 16px; fill: var(--color-5); transform: rotate(180deg); }
+.scroll-top:hover { background: var(--color-5); }
+.scroll-top:hover svg { fill: var(--color-0); }
+
+/* ========== ANIMATIONS ========== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 921px) {
+  .header-nav, .header-cta { display: none; }
+  .mobile-toggle { display: block; }
+  .header-inner { padding: 0 20px; }
+  .hero-legal { padding: 60px 24px 40px; }
+  .legal-section { padding: 60px 24px; }
+  h1 { font-size: 2.2rem; }
+  .site-footer { padding: 40px 24px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-nav { text-align: left; }
+  .footer-nav ul { align-items: flex-start; }
+}
+@media (max-width: 544px) {
+  h1 { font-size: 1.8rem; }
+  .hero-legal { padding: 48px 16px 32px; }
+  .legal-section { padding: 48px 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="masthead">
+  <div class="header-inner">
+    <a href="/" class="site-logo">
+      <img src="/fight-event-assets/logo.png" alt="Fight Event – Logo" width="200" height="67" decoding="async">
+    </a>
+    <nav class="header-nav" id="desktop-nav">
+      <ul>
+        <li><a href="/" class="menu-link">Accueil</a></li>
+        <li><a href="/athletes-combattants-fight-event/" class="menu-link">Nos athlètes</a></li>
+        <li class="has-submenu">
+          <a href="#" class="menu-link">L'agenda
+            <span class="dropdown-arrow"><svg viewBox="57 35.171 26 16.043"><path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"/></svg></span>
+          </a>
+          <ul class="sub-menu">
+            <li><a href="/evenements-boxe-fight-event/" class="menu-link">Éditions précédentes</a></li>
+            <li><a href="/evenements-a-venir-fight-event/" class="menu-link">Événements à venir</a></li>
+          </ul>
+        </li>
+        <li><a href="/offres-communication-fight-event-toulouse/" class="menu-link">Nos offres com'</a></li>
+        <li><a href="/partenaires-fight-event/" class="menu-link">Nos partenaires</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a href="/contact-fight-event/" class="btn">Nous rejoindre</a>
+    </div>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 28"><path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/">Accueil</a>
+    <a href="/evenements-boxe-fight-event/">Éditions précédentes</a>
+    <a href="/athletes-combattants-fight-event/">Nos athlètes</a>
+    <a href="/evenements-a-venir-fight-event/">Événements à venir</a>
+    <a href="/offres-communication-fight-event-toulouse/">Nos offres com'</a>
+    <a href="/partenaires-fight-event/">Partenaires du Fight Event</a>
+    <a href="/contact-fight-event/">Nous rejoindre</a>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero-legal">
+  <div class="section-inner">
+    <p style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--color-5);margin-bottom:12px;">Légal • Confidentialité • RGPD</p>
+    <h1>Mentions légales et Confidentialités</h1>
+    <p class="hero-desc">En vertu de l'article 6 de la loi n° 2004-575 du 21 Juin 2004 pour la confiance dans l'économie numérique, il est porté à la connaissance des utilisateurs du site Internet les présentes mentions légales. La connexion et la navigation sur le site par l'utilisateur implique l'acceptation intégrale et sans réserve des présentes mentions légales.</p>
+  </div>
+</section>
+
+<!-- ==================== LEGAL CONTENT ==================== -->
+<section class="legal-section fade-up">
+  <div class="legal-inner">
+
+    <h2>Identité</h2>
+    <p><strong>Nom :</strong> Fight Event</p>
+    <p><strong>E-mail :</strong> contact.fightevent@gmail.com</p>
+    <p><strong>Téléphone :</strong> 06 83 09 03 44</p>
+    <p><strong>Adresse :</strong> 12 rue de Fenouillet, 31200 Toulouse.</p>
+    <p><strong>Site Web :</strong> <a href="https://fight-event.fr">https://fight-event.fr</a></p>
+    <p><strong>Responsable de la publication et du traitement des données :</strong> Monsieur ELHADDAD Marouan</p>
+
+    <h2>Hébergement</h2>
+    <p><strong>OVHcloud</strong><br>
+    RCS Lille Métropole 424 761 419 00045<br>
+    Code APE 2620Z<br>
+    N° TVA : FR 22 424 761 419<br>
+    Siège social : 2 rue Kellermann – 59100 Roubaix – France</p>
+
+    <h2>Conditions d'utilisations</h2>
+    <p>L'accès au site Fight Event implique l'acceptation pleine et entière des conditions générales d'utilisation décrites ci-après. Celles-ci peuvent être modifiées ou complétées à tout moment.</p>
+
+    <h2>Services fournis</h2>
+    <p>Le site présente l'activité de Fight Event, ses services (organisation d'événements de boxe sous forme de galas et propose des offres de communication) et permet la prise de contact commerciale via formulaires. Fight Event s'efforce de fournir des informations précises mais ne saurait être tenu responsable des omissions ou erreurs involontaires. Les renseignements figurant sur le site ne sont pas exhaustifs et les photos non contractuelles. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne. Par ailleurs, toutes les informations indiquées sur le site sont données à titre indicatif, et sont susceptibles de changer ou d'évoluer sans préavis.</p>
+
+    <h2>Responsabilité</h2>
+    <p>Le site Internet ne pourra être tenu responsable de dommages matériels liés à l'utilisation du site. De plus, l'utilisateur du site s'engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour.</p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>Fight Event est propriétaire des droits de propriété intellectuelle et détient les droits d'usage sur tous les éléments accessibles sur le site Internet, notamment les textes, images, graphismes, logos, vidéos, architecture, icônes et sons à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
+    <p>Toutefois, il est possible que pour illustrer certains propos, des images libres de droits soient utilisées sur le site. Pour toutes réclamations, veuillez utiliser l'adresse e-mail fournie ci-dessus.</p>
+    <p>Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable au responsable de la publication. Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p>
+    <p>Conformément à l'article L. 122-5 du Code de la propriété intellectuelle, les courtes citations du contenu sont autorisées, sous réserve que soient indiqués clairement le nom de l'auteur et de la source, par un lien vers une des pages de ce site web.</p>
+
+    <h2>Responsabilité dans l'utilisation du service</h2>
+    <p>L'utilisateur s'engage à ne pas perturber le fonctionnement du service offert sur le site de quelques manières que ce soit. En particulier, l'utilisateur s'engage à s'abstenir de poster des messages illicites, diffamants ou insultants sur tout ou partie du site. Les commentaires déposés par les internautes reflètent exclusivement l'avis de leurs auteurs et demeurent sous leur responsabilité. En écrivant des commentaires sur le site, l'internaute accepte de se soumettre aux lois françaises et internationales. Les administrateurs du site se réservent le droit de modérer, modifier ou supprimer tout commentaire qu'ils jugent contraire à ces lois.</p>
+
+    <h3>Liens hypertextes</h3>
+    <p>Le site de Fight Event contient des liens hypertextes vers d'autres sites et dégage toute responsabilité à propos de ces liens externes ou des liens créés par d'autres sites vers fight-event.fr. Si l'utilisateur souhaite présenter un lien hypertexte en direction de ce site, il devrait en faire la demande écrite par e-mail. Fight Event se réserve le droit d'accepter ou de refuser un hyperlien sans avoir à en justifier sa décision.</p>
+
+    <h3>Formulaire de contact</h3>
+    <p>Lorsque vous utilisez le formulaire de contact il vous sera proposé de laisser votre nom et prénom, numéro de téléphone et adresse de messagerie, votre entreprise, le choix concernant votre demande et votre message, afin de vous répondre personnellement, établir des devis personnalisés. En cochant la case de consentement des formulaires vous acceptez l'utilisation de vos données mentionnées ci-dessus.</p>
+    <p>Lorsque vous utilisez le formulaire de contact Cal.com, il vous sera proposé de choisir un horaire pour votre rendez-vous, de laisser votre nom et prénom, numéro de téléphone et adresse de messagerie, votre entreprise, le choix concernant votre offre et votre message, afin de vous répondre personnellement et d'établir des devis personnalisés. En validant ce formulaire vous acceptez la politique de confidentialité de ce service.</p>
+
+    <h2>Contenus embarqués depuis d'autres sites</h2>
+    <p>Les articles de ce Site peuvent inclure des contenus intégrés (par exemple des vidéos, images, articles…). Le contenu intégré depuis d'autres sites se comporte de la même manière que si le visiteur se rendait sur cet autre site. Ces sites Web pourraient collecter des données sur vous, utiliser des cookies, embarquer des outils de suivis tiers, suivre vos interactions avec ces contenus embarqués si vous disposez d'un compte connecté sur leur site Web. Veuillez pour cela vous référer à leur page de confidentialités.</p>
+
+    <h2>Comment protégeons-nous vos données ?</h2>
+    <p>L'interface d'administration de ce site web et son accès est protégé par un mot de passe que seuls les administrateurs du site détiennent. De plus, nous avons procédé à la mise en place d'un certificat de sécurité SSL afin de sécuriser notre site. Cette sécurisation est vérifiable grâce à l'URL de ce site en "https".</p>
+
+    <h2>Le droit d'introduire une réclamation auprès de la CNIL</h2>
+    <p>Vous pouvez introduire une réclamation si vous considérez que le traitement de données à caractère personnel vous concernant constitue une violation à la réglementation. Si vous souhaitez avoir des informations supplémentaires sur vos droits, et plus particulièrement sur ce dernier droit, dirigez-vous sur le site web de la <a href="https://www.cnil.fr" target="_blank" rel="noopener">Commission Nationale de l'Informatique et des Libertés (CNIL)</a>. Le droit d'accès et de rectification prévu à l'article 34 et suivants de la loi précitée s'exerce par courrier à l'adresse mentionnée dans l'article « Identité ».</p>
+
+    <h2>Lois applicables et juridictions compétentes</h2>
+    <p>La loi française est seule applicable aux présentes Conditions Générales de Vente. En cas de litige survenant à l'occasion du contrat, tout différent lié à son interprétation, son exécution ou sa validité, et éventuellement après une tentative de recherche d'une solution amiable, sera soumis à la compétence exclusive du Tribunal de Commerce Compétent dont dépend Fight Event.</p>
+
+    <h2>Modification des mentions légales et politique de confidentialités</h2>
+    <p>Fight Event se réserve le droit de modifier cette politique de confidentialité à tout moment. Nous vous invitons à la consulter régulièrement.</p>
+
+    <h2>Crédit à l'image</h2>
+    <p>Photos et vidéos : Fight Event, OrfreeVisuels</p>
+
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer" id="colophon">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/fight-event-assets/footer-logo.webp" alt="Fight Event" width="73" loading="lazy">
+      <p>©2025 Fight Event. Tout droits réservés.</p>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/evenements-boxe-fight-event/">Éditions précédentes</a></li>
+        <li><a href="/athletes-combattants-fight-event/">Nos athlètes</a></li>
+        <li><a href="/evenements-a-venir-fight-event/">Événements à venir</a></li>
+        <li><a href="/offres-communication-fight-event-toulouse/">Nos offres com'</a></li>
+        <li><a href="/partenaires-fight-event/">Partenaires du Fight Event</a></li>
+        <li><a href="/contact-fight-event/">Nous rejoindre</a></li>
+        <li><a href="/legal-et-confidentialites/">Mentions légales &amp; confidentialité</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<!-- ==================== SCROLL TO TOP ==================== -->
+<div class="scroll-top" id="scroll-top" tabindex="0" title="Retour en haut" aria-label="Retour en haut">
+  <svg viewBox="57 35.171 26 16.043"><path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"/></svg>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script>
+const mobileToggle = document.getElementById('mobile-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileToggle.addEventListener('click', () => {
+  const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+  mobileToggle.setAttribute('aria-expanded', !expanded);
+  mobileMenu.classList.toggle('active');
+});
+const scrollTop = document.getElementById('scroll-top');
+window.addEventListener('scroll', () => {
+  scrollTop.classList.toggle('visible', window.scrollY > 300);
+});
+scrollTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+const fadeEls = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { rootMargin: '0px 0px -50px 0px' });
+fadeEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
